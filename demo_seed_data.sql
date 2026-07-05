@@ -49,11 +49,11 @@ INSERT INTO `emp_roles` (`id`, `role`) VALUES
 
 -- 4. Seed Employees
 INSERT INTO `emp_details` (`name`, `adhaar`, `role_id`, `phone`) VALUES
-('Deepak Sharma', '444455556666', 1, '9856789012'),
-('Sunil Yadav', '400050006000', 2, '9823456789'),
-('Rajesh Kumar', '100020003000', 3, '9812345678'),
-('Karan Singh', '111122223333', 4, '9845678901'),
-('Mohit Fabricators', '700080009000', 5, '9834567890');
+('John Smith', '444455556666', 1, '9856789012'),
+('David Miller', '400050006000', 2, '9823456789'),
+('Robert Johnson', '100020003000', 3, '9812345678'),
+('Michael Brown', '111122223333', 4, '9845678901'),
+('Apex Fabricators', '700080009000', 5, '9834567890');
 
 -- 5. Seed Production Stages
 INSERT INTO `process_stage` (`id`, `stage_name`) VALUES
@@ -69,14 +69,14 @@ INSERT INTO `process_stage` (`id`, `stage_name`) VALUES
 
 -- 6. Seed Organizations (Clients)
 INSERT INTO `organization` (`id`, `name`, `org_name`, `phone`, `email`, `gstin`, `adhaar`, `branch`, `org_type`) VALUES
-(1, 'Mr. Sharma', 'Global High School', '9911223344', 'contact@globalhigh.com', '07AAAAA0000A1Z5', '123412341234', 
-'[{"id": "1", "name": "Main Office", "address": "Delhi", "phone": "9911223301"}, {"id": "2", "name": "West Wing", "address": "Rohini", "phone": "9911223302"}]', 'Wholesale'),
+(1, 'Mr. Smith', 'St. Jude Academy', '9911223344', 'contact@stjude.com', '07AAAAA0000A1Z5', '123412341234', 
+'[{"id": "1", "name": "Main Office", "address": "New York", "phone": "9911223301"}, {"id": "2", "name": "West Wing", "address": "Boston", "phone": "9911223302"}]', 'Wholesale'),
 
-(2, 'Tech Admin', 'Innovate Tech Solutions', '9922334455', 'admin@innovate.com', '08BBBBB1111B2Z6', '567856785678', 
-'[{"id": "5", "name": "HQ Gurgaon", "address": "Sector 44", "phone": "9922334401"}, {"id": "6", "name": "R&D Lab", "address": "Noida", "phone": "9922334402"}]', 'Retail'),
+(2, 'Alex Mercer', 'Apex Tech Solutions', '9922334455', 'admin@apextech.com', '08BBBBB1111B2Z6', '567856785678', 
+'[{"id": "5", "name": "HQ Boston", "address": "Sector 4", "phone": "9922334401"}, {"id": "6", "name": "R&D Lab", "address": "Austin", "phone": "9922334402"}]', 'Retail'),
 
-(3, 'Dr. Gupta', 'City Care Hospital', '9933445566', 'care@cityhospital.com', '09CCCCC2222C3Z7', '901290129012', 
-'[{"id": "9", "name": "Main Emergency", "address": "New Delhi", "phone": "9933445501"}]', 'Distribution');
+(3, 'Dr. Taylor', 'Crestview Hospital', '9933445566', 'care@crestview.com', '09CCCCC2222C3Z7', '901290129012', 
+'[{"id": "9", "name": "Main Emergency", "address": "Chicago", "phone": "9933445501"}]', 'Distribution');
 
 -- 7. Seed Items
 INSERT INTO `items` (`id`, `name`, `symbol`, `item_type`, `gender`) VALUES
@@ -124,11 +124,11 @@ INSERT INTO `articles` (`id`, `item_id`, `cloth_detail_id`, `material_req`, `rem
 
 -- 11. Seed Orgs Articles Junction
 INSERT INTO `orgs_articles` (`article_id`, `org_id`, `dress_name`, `status`, `stage_code`) VALUES
-(1, 1, 'GHS White Shirt', 1, 'SSH'),
-(2, 1, 'GHS Navy Blazer', 1, 'SBZ'),
-(3, 1, 'GHS Pleated Skirt', 1, 'PSK'),
-(4, 2, 'Tech Blue Trouser', 1, 'CTR'),
-(5, 3, 'City Care Tunic', 1, 'NTU');
+(1, 1, 'SJA White Shirt', 1, 'SSH'),
+(2, 1, 'SJA Navy Blazer', 1, 'SBZ'),
+(3, 1, 'SJA Pleated Skirt', 1, 'PSK'),
+(4, 2, 'Apex Blue Trouser', 1, 'CTR'),
+(5, 3, 'Crestview Tunic', 1, 'NTU');
 
 -- 12. Seed Price List
 INSERT INTO `price_list` (`article_id`, `size`, `price`) VALUES
