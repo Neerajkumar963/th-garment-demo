@@ -1,0 +1,21 @@
+# Ignore sensitive database helper scripts
+init_db.js
+
+# Ignore environment variables
+.env
+th-garments/server/.env
+th-garments/client/.env
+th-garments/client/.env.production
+th-garments/client/.env.development
+
+# Ignore package dependencies
+node_modules/
+th-garments/server/node_modules/
+th-garments/client/node_modules/
+
+# Ignore production builds
+th-garments/client/dist/
+
+# Ignore logs
+th-garments/server/logs/
+*.log

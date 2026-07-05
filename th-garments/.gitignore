@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Private Project Documents
+PHASE_1_PAYMENT_STRUCTURE.md
+PHASE_1_PAYMENT_STRUCTURE.pdf
+SELF_HOSTING_GUIDE.md
+SELF_HOSTING_GUIDE.pdf
+PENDING_REQUIREMENTS.md

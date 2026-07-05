@@ -1,0 +1,17 @@
+[Unit]
+Description=TH Garments ERP Server + Cloudflare Tunnel
+After=network.target mysql.service
+Wants=mysql.service
+
+[Service]
+Type=simple
+User=thgarments-server
+WorkingDirectory=/home/thgarments-server/th-garment
+ExecStart=/bin/bash /home/thgarments-server/th-garment/scripts/start-server.sh
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
